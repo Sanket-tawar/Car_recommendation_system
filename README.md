@@ -1,44 +1,30 @@
-# Cars24 Car Recommendation System 🚗
+ # 🚗 Cars24 Car Recommendation System | Streamlit
 
-This project builds a **used car recommendation system** using data scraped from Cars24.  
-It recommends similar cars based on vehicle features such as name, variant, fuel type, and transmission.
+## 📌 Project Overview
+This project features an interactive, web-based Car Recommendation System built using Streamlit. By processing comprehensive used car data, the application allows users to search for vehicles, apply custom filters, and receive intelligent recommendations based on similarity metrics. 
 
-The project demonstrates an **end-to-end data science workflow**, including web scraping, data preprocessing, recommendation modeling, and web app deployment.
+The goal of this project is to bridge the gap between complex machine learning recommendation engines and an intuitive, user-friendly interface that assists buyers in making informed purchasing decisions.
 
-## Project Pipeline
+## 🎯 Business & Technical Objective
+The primary objective of this system is to streamline the used car discovery process by providing relevant alternatives to a user's vehicle of interest. 
 
-1. **Data Acquisition (Web Scraping)**
-   - Scraped used car listings from Cars24 Pune pages.
-   - Extracted fields such as car URL, image URL, name, variant, price, location, EMI, fuel type, transmission, and registration.
+Key business questions and functionalities addressed include:
+*   How can content-based filtering effectively recommend similar vehicles?
+*   How can dynamic, real-time sidebar filters restrict options based on budget and fuel preference?
+*   How can a responsive frontend handle dataset updates seamlessly to present instantaneous recommendations?
 
-2. **Data Cleaning & Preprocessing**
-   - Standardized column names.
-   - Converted price values into numerical format.
-   - Cleaned KM driven values.
-   - Handled missing or inconsistent data.
+## 🛠️ Tools & Technologies
+*   **Streamlit** – Frontend application framework and UI deployment
+*   **Python** – Core programming logic and application backend
+*   **Pandas & NumPy** – Data manipulation, filtering, and pre-processing
+*   **Scikit-Learn** – Similarity algorithms and feature vectorization
 
-3. **Recommendation System**
-   - Created a **tags feature** combining important car attributes.
-   - Used **CountVectorizer** to convert text features into vectors.
-   - Applied **Cosine Similarity** to compute similarity between cars.
-   - Generated top 5 similar car recommendations.
-
-4. **Web Application (Streamlit)**
-   - Built an interactive UI using Streamlit.
-   - Features:
-     - Car selection dropdown
-     - Price range filter
-     - Fuel type filter
-     - Car images display
-     - Direct link to view the car on Cars24
-
-## Tech Stack
-
-- Python
-- Pandas
-- BeautifulSoup
-- Scikit-learn
-- Streamlit
-- Jupyter Notebook
-
-## Project Structure
+## 📂 Project Files
+```text
+Cars24-Car-Recommendation/
+│
+├── app.py                      # Main Streamlit application file
+├── dataset.csv                 # Cleaned Cars24 used car dataset
+├── Screenshot 2026-06-13 144639.png  # UI Landing view screenshot
+├── Screenshot 2026-06-13 144723.png  # Dropdown & filter interaction view
+└── README.md                   # Project documentation
