@@ -20,15 +20,7 @@ Python – Core programming logic and application backend
 Pandas & NumPy – Data manipulation, filtering, and pre-processing
 Scikit-Learn – Similarity algorithms and feature vectorization
 
-📂 Project Files
-
-Cars24-Car-Recommendation/
-│
-├── app.py
-├── dataset.csv
-├── Screenshot 2026-06-13 144639.png
-└── Screenshot 2026-06-13 144723.png
-
+ 
 File Description
 
 FileDescriptionapp.pyCore Python script containing the Streamlit UI and recommendation logic.dataset.csvPre-processed source dataset containing used car attributes.Screenshot 2026-06-13 144639.pngLanding page preview showing the primary layout and baseline features.Screenshot 2026-06-13 144723.pngLive application preview illustrating interactive filters and dropdown behavior.
